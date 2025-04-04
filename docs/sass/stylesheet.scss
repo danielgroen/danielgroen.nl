@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+
+$bg: #F8FAFC;
+$blue: #005FFF;
+$color: #2F3A4C;
+$red: #FF2962;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: $bg;
+  font-family: 'Open Sans', sans-serif;
+  color: $color;
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  aside {
+    width: 22px;
+    background-color: $blue;
+  }
+
+  main {
+    padding: 10vw;
+    width: calc(100% - 22px);
+
+    header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
+    svg {
+      width: 260px;
+    }
+
+    .coming {
+      font-size: 9px;
+      margin-bottom: 12px;
+      padding: 2px 6px;
+      border-radius: 10px;
+      color: white;
+      background: $red;
+    }
+
+    p {
+      display: block;
+      max-width: 500px;
+
+      a {
+        color: $blue;
+      }
+    }
+  }
+}
